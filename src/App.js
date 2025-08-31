@@ -1,5 +1,5 @@
 import React from 'react';
-import { Book, Users, Star, Check } from 'lucide-react';
+import { Book } from 'lucide-react';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
             <Book className="h-8 w-8 text-indigo-600 mr-2" />
             <span className="font-bold text-xl">The Quill Shelf</span>
           </div>
-          <div className="space-x-4">
+          <div className="space-x-4 hidden md:block">
             <button className="text-gray-700 hover:text-indigo-600">Studies</button>
             <button className="text-gray-700 hover:text-indigo-600">Pricing</button>
             <button className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">
@@ -31,7 +31,10 @@ function App() {
         <div className="grid md:grid-cols-3 gap-8 mt-16">
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold mb-4">Monthly</h3>
-            <p className="text-4xl font-bold mb-4">$4.99<span className="text-gray-500 text-lg">/mo</span></p>
+            <p className="text-4xl font-bold mb-4">
+              $4.99
+              <span className="text-gray-500 text-lg">/mo</span>
+            </p>
             <button className="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700">
               Start Monthly
             </button>
@@ -42,7 +45,10 @@ function App() {
               BEST VALUE
             </div>
             <h3 className="text-2xl font-bold mb-4">Annual</h3>
-            <p className="text-4xl font-bold mb-4">$49<span className="text-gray-500 text-lg">/yr</span></p>
+            <p className="text-4xl font-bold mb-4">
+              $49
+              <span className="text-gray-500 text-lg">/yr</span>
+            </p>
             <button className="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700">
               Start Annual
             </button>
@@ -50,4 +56,18 @@ function App() {
           
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold mb-4">Lifetime</h3>
-            <p className="text-4xl font-bold mb-4">$99<span className="text-gray-500 tex
+            <p className="text-4xl font-bold mb-4">
+              $99
+              <span className="text-gray-500 text-lg"> once</span>
+            </p>
+            <button className="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700">
+              Get Lifetime
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
