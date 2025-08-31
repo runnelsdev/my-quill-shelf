@@ -1,4 +1,3 @@
-cat > src/App.js << 'EOF'
 import React from 'react';
 import { Book, Users, Star, Check } from 'lucide-react';
 
@@ -51,16 +50,4 @@ function App() {
           
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold mb-4">Lifetime</h3>
-            <p className="text-4xl font-bold mb-4">$99<span className="text-gray-500 text-lg"> once</span></p>
-            <button className="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700">
-              Get Lifetime
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default App;
-EOF
+            <p className="text-4xl font-bold mb-4">$99<span className="text-gray-500 tex
